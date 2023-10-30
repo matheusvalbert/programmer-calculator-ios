@@ -16,6 +16,7 @@
 		D74B62212AEAB02300DD4DC1 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B62202AEAB02300DD4DC1 /* DIContainer.swift */; };
 		D74B62242AEAB53300DD4DC1 /* BaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B62232AEAB53300DD4DC1 /* BaseEvent.swift */; };
 		D74B62292AEAB72400DD4DC1 /* ChangeBaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B62282AEAB72400DD4DC1 /* ChangeBaseUseCase.swift */; };
+		D74C6ED62AEFDD9A005196B9 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74C6ED52AEFDD9A005196B9 /* Injected.swift */; };
 		D75C76F52AED79E1009E7351 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D75C76F42AED79E1009E7351 /* GoogleService-Info.plist */; };
 		D7678F9527E8089900754032 /* ProgrammerCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7678F9427E8089900754032 /* ProgrammerCalculatorApp.swift */; };
 		D7678F9727E8089900754032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7678F9627E8089900754032 /* ContentView.swift */; };
@@ -52,6 +53,7 @@
 		D74B62202AEAB02300DD4DC1 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		D74B62232AEAB53300DD4DC1 /* BaseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEvent.swift; sourceTree = "<group>"; };
 		D74B62282AEAB72400DD4DC1 /* ChangeBaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBaseUseCase.swift; sourceTree = "<group>"; };
+		D74C6ED52AEFDD9A005196B9 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		D75C76F42AED79E1009E7351 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7678F9127E8089900754032 /* ProgrammerCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammerCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7678F9427E8089900754032 /* ProgrammerCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerCalculatorApp.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				D74B62202AEAB02300DD4DC1 /* DIContainer.swift */,
 				D74B621B2AEAA37500DD4DC1 /* AppAssembly.swift */,
+				D74C6ED52AEFDD9A005196B9 /* Injected.swift */,
 			);
 			path = di;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				D7678F9727E8089900754032 /* ContentView.swift in Sources */,
 				D74B62182AEAA1FA00DD4DC1 /* ResultState.swift in Sources */,
 				D737127327E9E1CF00FF4EB9 /* BaseResult.swift in Sources */,
+				D74C6ED62AEFDD9A005196B9 /* Injected.swift in Sources */,
 				D7678F9527E8089900754032 /* ProgrammerCalculatorApp.swift in Sources */,
 				D79A884D2AEBF5C600F23CD5 /* DeleteUseCase.swift in Sources */,
 				D7678FAF27E80B1E00754032 /* Constants.swift in Sources */,
@@ -537,7 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"ProgrammerCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = QQP8BWGP7M;
@@ -558,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matheusvalbert.programmercalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";
@@ -578,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"ProgrammerCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = QQP8BWGP7M;
@@ -599,7 +603,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matheusvalbert.programmercalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";

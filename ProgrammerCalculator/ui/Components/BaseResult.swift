@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BaseResult: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         VStack {

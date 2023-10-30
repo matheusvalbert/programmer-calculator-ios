@@ -11,10 +11,10 @@ struct CalculatorButton: View {
     let text: String
     let height: CGFloat = ButtonSize.height
     var width: CGFloat = ButtonSize.width
-    var backgroundColor = Colors.button
-    var disabledBackgroundColor = Colors.disabledButton
-    var textColor: Color = Colors.text
-    var disabledTextColor = Colors.disabledText
+    var backgroundColor = Color(.button)
+    var disabledBackgroundColor = Color(.disabledButton)
+    var textColor: Color = Color(.text)
+    var disabledTextColor = Color(.disabledText)
     var enabled = true
     let onTap: () -> Void
 
@@ -45,8 +45,8 @@ struct BaseButton: View {
                 onTap()
             }) {
                 SelectedBase(selected: selected)
-                CustomText(text: base, height: ResultSize.sizeResult, font: Fonts.baseResult, color: Colors.textResult)
-                CustomText(text: result, height: ResultSize.sizeResult, font: Fonts.baseResult, color: Colors.text)
+                CustomText(text: base, height: ResultSize.sizeResult, font: Fonts.baseResult, color: Color(.textResult))
+                CustomText(text: result, height: ResultSize.sizeResult, font: Fonts.baseResult, color: Color(.text))
                 Spacer()
             }
         }

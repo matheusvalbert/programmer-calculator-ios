@@ -26,7 +26,7 @@ struct CustomText: View {
 
 struct SelectedBase: View {
     var selected: Bool
-    let color = Colors.operationButton
+    let color = Color(.operationButton)
     
     var body: some View {
         Rectangle()

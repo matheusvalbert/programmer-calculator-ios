@@ -9,12 +9,12 @@ import SwiftUI
 
 struct Result: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
             Spacer()
-            CustomText(text: viewModel.result.input, height: ResultSize.size, font: Fonts.result, color: Colors.text)
+            CustomText(text: viewModel.result.input, height: ResultSize.size, font: Fonts.result, color: Color(.text))
         }
     }
 }

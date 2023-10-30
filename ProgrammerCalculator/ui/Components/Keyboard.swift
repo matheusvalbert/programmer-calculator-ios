@@ -23,35 +23,35 @@ struct Keyboard: View {
 
 struct LineZero: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
             CalculatorButton(
                 text: "C",
-                backgroundColor: Colors.functionButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.functionButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .clear)
             }
             CalculatorButton(
                 text: "(",
-                backgroundColor: Colors.functionButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.functionButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .openParentheses)
             }
             CalculatorButton(
                 text: ")",
-                backgroundColor: Colors.functionButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.functionButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .closeParentheses)
             }
             CalculatorButton(
                 text: "<<",
-                backgroundColor: Colors.functionButton,
-                textColor: Colors.operationButtonText,
+                backgroundColor: Color(.functionButton),
+                textColor: Color(.operationButtonText),
                 enabled: viewModel.result.base == .bin
             ) {
                 viewModel.onInputEvent(event: .shl)
@@ -62,7 +62,7 @@ struct LineZero: View {
 
 struct LineOne: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
@@ -86,8 +86,8 @@ struct LineOne: View {
             }
             CalculatorButton(
                 text: ">>",
-                backgroundColor: Colors.functionButton,
-                textColor: Colors.operationButtonText,
+                backgroundColor: Color(.functionButton),
+                textColor: Color(.operationButtonText),
                 enabled: viewModel.result.base == .bin
             ) {
                 viewModel.onInputEvent(event: .shr)
@@ -98,7 +98,7 @@ struct LineOne: View {
 
 struct LineTwo: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
@@ -122,8 +122,8 @@ struct LineTwo: View {
             }
             CalculatorButton(
                 text: "÷",
-                backgroundColor: Colors.operationButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.functionButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .operation("÷"))
             }
@@ -133,7 +133,7 @@ struct LineTwo: View {
 
 struct LineThree: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
@@ -157,8 +157,8 @@ struct LineThree: View {
             }
             CalculatorButton(
                 text: "×",
-                backgroundColor: Colors.operationButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.operationButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .operation("×"))
             }
@@ -168,7 +168,7 @@ struct LineThree: View {
 
 struct LineFour: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
@@ -192,8 +192,8 @@ struct LineFour: View {
             }
             CalculatorButton(
                 text: "-",
-                backgroundColor: Colors.operationButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.operationButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .operation("-"))
             }
@@ -203,7 +203,7 @@ struct LineFour: View {
 
 struct LineFive: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
@@ -224,8 +224,8 @@ struct LineFive: View {
             }
             CalculatorButton(
                 text: "+",
-                backgroundColor: Colors.operationButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.operationButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .operation("+"))
             }
@@ -235,7 +235,7 @@ struct LineFive: View {
 
 struct LineSix: View {
     
-    @ObservedObject var viewModel: ViewModel = DIContainer.shared.resolve()
+    @Injected var viewModel: ViewModel
     
     var body: some View {
         HStack {
@@ -250,8 +250,8 @@ struct LineSix: View {
             }
             CalculatorButton(
                 text: "=",
-                backgroundColor: Colors.operationButton,
-                textColor: Colors.operationButtonText
+                backgroundColor: Color(.operationButton),
+                textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .equal)
             }
