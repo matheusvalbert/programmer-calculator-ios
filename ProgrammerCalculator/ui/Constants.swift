@@ -27,6 +27,6 @@ enum ResultSize {
 }
 
 enum RectangleSize {
-    public static let width: CGFloat = w/70
-    public static let height: CGFloat = h/30
+    public static let width: CGFloat = w / 70
+    public static let height: CGFloat = h / 30
 }

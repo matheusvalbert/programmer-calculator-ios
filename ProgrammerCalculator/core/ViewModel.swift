@@ -9,7 +9,21 @@ import Foundation
 
 class ViewModel: ObservableObject {
     
+    private let hasBeenRequestedUseCase: HasBeenRequestedUseCase
+    private let updateNumberOfInteractionsUseCase: UpdateNumberOfInteractionsUseCase
+    private let shouldRequestReviewUseCase: ShouldRequestReviewUseCase
+    
     @Published var result = ResultState()
+    
+    init(
+        hasBeenRequestedUseCase: HasBeenRequestedUseCase,
+        updateNumberOfInteractionsUseCase: UpdateNumberOfInteractionsUseCase,
+        shouldRequestReviewUseCase: ShouldRequestReviewUseCase
+    ) {
+        self.hasBeenRequestedUseCase = hasBeenRequestedUseCase
+        self.updateNumberOfInteractionsUseCase = updateNumberOfInteractionsUseCase
+        self.shouldRequestReviewUseCase = shouldRequestReviewUseCase
+    }
     
     func onChangeBase(event: BaseEvent) {
         ChangeBaseUseCase.execute(result: &result, event: event)
@@ -42,5 +56,14 @@ class ViewModel: ObservableObject {
         }
         
         CalculateUseCase.execute(result: &result)
+    }
+    
+    func shouldRequestReview() -> Bool {
+        if(hasBeenRequestedUseCase.execute()) {
+            return false
+        }
+        updateNumberOfInteractionsUseCase.execute()
+        
+        return shouldRequestReviewUseCase.execute()
     }
 }

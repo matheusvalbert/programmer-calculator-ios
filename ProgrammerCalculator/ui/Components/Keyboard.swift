@@ -33,6 +33,7 @@ struct LineZero: View {
                 textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .clear)
+                requestReviewIfNeeded()
             }
             CalculatorButton(
                 text: "(",
@@ -254,6 +255,7 @@ struct LineSix: View {
                 textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .equal)
+                requestReviewIfNeeded()
             }
         }
     }
