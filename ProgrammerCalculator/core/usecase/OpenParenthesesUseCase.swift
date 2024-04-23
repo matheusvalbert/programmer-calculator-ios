@@ -11,7 +11,7 @@ struct OpenParenthesesUseCase {
     static func execute(result: inout ResultState) {
         let lastCharacter = result.input.lastCharacter()
         
-        if lastCharacter.isZero() {
+        if result.input.isZero() {
             result.input = "("
         } else if !lastCharacter.isOperation() && !lastCharacter.isOpenParentheses() {
             result.input += "×("

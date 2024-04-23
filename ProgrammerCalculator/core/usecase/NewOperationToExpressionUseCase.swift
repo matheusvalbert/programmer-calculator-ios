@@ -11,9 +11,9 @@ struct NewOperationToExpressionUseCase {
     static func execute(result: inout ResultState, operation: String) {
         let lastCharacter = result.input.lastCharacter()
         
-        if lastCharacter.isZero() || lastCharacter.isOpenParentheses() {
+        if result.input.isZero() || lastCharacter.isOpenParentheses() {
             return
-        } else if lastCharacter.isOperation() || lastCharacter.isOpenParentheses() || lastCharacter.isZero() {
+        } else if lastCharacter.isOperation() {
             result.input = result.input.dropLast() + operation
         } else {
             result.input += operation

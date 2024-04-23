@@ -25,7 +25,6 @@
 		D7678FAA27E80AD000754032 /* CustomTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7678FA927E80AD000754032 /* CustomTexts.swift */; };
 		D7678FAF27E80B1E00754032 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7678FAE27E80B1E00754032 /* Constants.swift */; };
 		D7984D6527E835B700417480 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7984D6427E835B700417480 /* Keyboard.swift */; };
-		D79992522BB76B8A00415AA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79992512BB76B8A00415AA3 /* GoogleService-Info.plist */; };
 		D79992552BB7718000415AA3 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79992542BB7718000415AA3 /* UserDefaultsHelper.swift */; };
 		D79992582BB7750400415AA3 /* RequestReviewRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79992572BB7750400415AA3 /* RequestReviewRepositoryImpl.swift */; };
 		D799925A2BB7753600415AA3 /* RequestReviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79992592BB7753600415AA3 /* RequestReviewRepository.swift */; };
@@ -47,6 +46,7 @@
 		D79A88522AEBFB1800F23CD5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A88512AEBFB1800F23CD5 /* String+Ext.swift */; };
 		D7ED48092AEC4ED3007C3557 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED48082AEC4ED3007C3557 /* Converter.swift */; };
 		D7ED480B2AEC5E94007C3557 /* CalculateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED480A2AEC5E94007C3557 /* CalculateUseCase.swift */; };
+		D7F0CCF52BD8650800C39A9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7F0CCF42BD8650800C39A9F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +71,6 @@
 		D7678FA927E80AD000754032 /* CustomTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTexts.swift; sourceTree = "<group>"; };
 		D7678FAE27E80B1E00754032 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D7984D6427E835B700417480 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
-		D79992512BB76B8A00415AA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D79992542BB7718000415AA3 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		D79992572BB7750400415AA3 /* RequestReviewRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewRepositoryImpl.swift; sourceTree = "<group>"; };
 		D79992592BB7753600415AA3 /* RequestReviewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewRepository.swift; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		D79A88512AEBFB1800F23CD5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		D7ED48082AEC4ED3007C3557 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		D7ED480A2AEC5E94007C3557 /* CalculateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateUseCase.swift; sourceTree = "<group>"; };
+		D7F0CCF42BD8650800C39A9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/programmer-calculator/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D7678F9427E8089900754032 /* ProgrammerCalculatorApp.swift */,
-				D79992512BB76B8A00415AA3 /* GoogleService-Info.plist */,
+				D7F0CCF42BD8650800C39A9F /* GoogleService-Info.plist */,
 				D74B62122AEA9F7800DD4DC1 /* ui */,
 				D74B62132AEA9F9800DD4DC1 /* core */,
 				D79A88502AEBFB0600F23CD5 /* extension */,
@@ -351,7 +351,7 @@
 			files = (
 				D7678F9C27E8089A00754032 /* Preview Assets.xcassets in Resources */,
 				D7678F9927E8089A00754032 /* Assets.xcassets in Resources */,
-				D79992522BB76B8A00415AA3 /* GoogleService-Info.plist in Resources */,
+				D7F0CCF52BD8650800C39A9F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 26;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"ProgrammerCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = QQP8BWGP7M;
@@ -614,7 +614,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matheusvalbert.programmercalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";
@@ -635,7 +635,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 26;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"ProgrammerCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = QQP8BWGP7M;
@@ -656,7 +656,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matheusvalbert.programmercalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RESOURCES_TARGETED_DEVICE_FAMILY = "";

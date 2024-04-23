@@ -123,7 +123,7 @@ struct LineTwo: View {
             }
             CalculatorButton(
                 text: "÷",
-                backgroundColor: Color(.functionButton),
+                backgroundColor: Color(.operationButton),
                 textColor: Color(.operationButtonText)
             ) {
                 viewModel.onInputEvent(event: .operation("÷"))
